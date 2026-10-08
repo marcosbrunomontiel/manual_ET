@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-bitter: 'Bitter', Georgia, serif;
+    --font-fago: 'Public Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+}
+
+.font-bitter {
+  font-family: 'Bitter', Georgia, serif;
+}
+
+.font-fago {
+  font-family: 'Public Sans', 'Fago', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.font-mono-code {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Editorial newspaper column styles */
+.editorial-columns-2 {
+  column-count: 2;
+  column-gap: 1.25rem;
+}
+
+.editorial-columns-3 {
+  column-count: 3;
+  column-gap: 1.25rem;
+}
+
+.editorial-columns-4 {
+  column-count: 4;
+  column-gap: 1rem;
+}
+
+.editorial-columns-5 {
+  column-count: 5;
+  column-gap: 0.85rem;
+}
+
+/* Editorial drop cap (capitular) */
+.drop-cap::first-letter {
+  float: left;
+  font-size: 3.4em;
+  line-height: 0.8;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-bottom: 2px;
+  font-family: 'Bitter', serif;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+/* Print styling support */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: white !important;
+    color: black !important;
+  }
+}

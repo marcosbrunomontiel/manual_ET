@@ -1,0 +1,6 @@
+{
+  "name": "Manual de Estilo y Diagramación - El Tribuno",
+  "description": "Manual exhaustivo de ingeniería inversa de diseño editorial, retícula, jerarquía tipográfica y maquetación de El Tribuno.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
